@@ -1,0 +1,88 @@
+import cv2
+img=cv2.imread("solar-system.jpg")
+sun="Sun"
+mer="Mercury"
+ven="Venus"
+ear="Earth"
+mar="Mars"
+jup="Jupiter"
+sat="Saturn"
+nep="Neptune"
+ura="Uranus"
+moon="Moon"
+cv2.putText(img,
+            sun,
+            (90,50),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=1.2,
+            color=(0,0,255)
+            )
+cv2.putText(img,
+            mer,
+            (120,270),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.5,
+            color=(255,255,255)
+            )
+cv2.putText(img,
+            ven,
+            (195,170),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.5,
+            color=(0,255,255)
+            )
+cv2.putText(img,
+            ear,
+            (290,275),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.65,
+            color=(255,0,0)
+            )
+cv2.putText(img,
+            moon,
+            (320,155),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.45,
+            color=(255,255,255)
+            )
+cv2.putText(img,
+            mar,
+            (380,170),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.65,
+            color=(0,0,255)
+            )
+
+cv2.putText(img,
+            jup,
+            (440,350),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.8,
+            color=(79,108,180)
+            )
+cv2.putText(img,
+            sat,
+            (770,70),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.75,
+            color=(145,185,204)
+            )
+
+cv2.putText(img,
+            ura,
+            (965,320),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.7,
+            color=(246,241,204)
+            )
+cv2.putText(img,
+            nep,
+            (1105,120),
+            fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,
+            fontScale=0.7,
+            color=(245,112,66)
+            )
+
+cv2.imshow("Solar System",img)
+cv2.imwrite("Solar_System.jpg",img)
+cv2.waitKey(0)
